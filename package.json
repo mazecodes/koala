@@ -39,6 +39,7 @@
     "commander": "^7.0.0",
     "configstore": "^5.0.1",
     "inquirer": "^7.3.3",
+    "minimist": "^1.2.5",
     "moment": "^2.29.1",
     "table": "^6.0.7"
   }

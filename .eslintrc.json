@@ -5,6 +5,7 @@
   "rules": {
     "prettier/prettier": "error",
     "no-console": "off",
-    "node/shebang": "off"
+    "node/shebang": "off",
+    "no-underscore-dangle": "off"
   }
 }
