@@ -59,8 +59,25 @@ const deleteShortcut = alias => {
   config.delete(alias);
 };
 
+/**
+ * Clear all shortcuts
+ *
+ * @returns {void}
+ *
+ * @example
+ *   clearShortcuts()
+ */
+const clearShortcuts = () => {
+  if (config.size === 0) {
+    throw new Error('No shortcut exists.');
+  }
+
+  config.clear();
+};
+
 module.exports = {
   setShortcut,
   getCommand,
   deleteShortcut,
+  clearShortcuts,
 };
