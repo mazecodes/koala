@@ -91,10 +91,21 @@ const clearShortcuts = () => {
  */
 const getShortcuts = () => config.all;
 
+/**
+ * Get the number of shortcuts
+ *
+ * @returns {Number} - The number of shortcuts
+ *
+ * @example
+ *   getSize()
+ */
+const getSize = () => config.size;
+
 module.exports = {
   setShortcut,
   getCommand,
   deleteShortcut,
   clearShortcuts,
   getShortcuts,
+  getSize,
 };
