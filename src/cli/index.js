@@ -5,6 +5,7 @@ const package = require('../../package.json');
 const setCommand = require('./commands/set');
 const getCommand = require('./commands/get');
 const deleteCommand = require('./commands/delete');
+const clearCommand = require('./commands/clear');
 
 commander.name('koala');
 commander.version(package.version);
@@ -17,7 +18,7 @@ commander
 
 commander
   .command('get <alias>')
-  .alias('c')
+  .alias('g')
   .description('Get the command of a shortcut')
   .action(getCommand);
 
@@ -26,5 +27,11 @@ commander
   .alias('del')
   .description('Delete a shortcut')
   .action(deleteCommand);
+
+commander
+  .command('clear')
+  .alias('c')
+  .description('Clear all shortcuts')
+  .action(clearCommand);
 
 module.exports = commander;
