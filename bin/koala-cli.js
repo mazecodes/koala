@@ -2,4 +2,4 @@
 
 const koala = require('../src/cli');
 
-koala.parse(process.argvs);
+koala.parse(process.argv);

@@ -4,7 +4,8 @@
   "description": "Create shortcuts for your commands with ease.",
   "main": "index.js",
   "bin": {
-    "koala": "bin/koala-cli.js"
+    "koala": "bin/koala-cli.js",
+    "k": "bin/koala.js"
   },
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
