@@ -1,6 +1,6 @@
 {
   "name": "usekoala",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Create shortcuts for commands with ease.",
   "main": "src/index.js",
   "bin": {
@@ -16,7 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/mazecodes/koala.git"
   },
-  "keywords": [],
+  "keywords": [
+    "koala",
+    "shortcut",
+    "alias",
+    "command",
+    "execute",
+    "cli"
+  ],
   "author": "Maze Peterson",
   "license": "MIT",
   "bugs": {
