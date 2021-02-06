@@ -1,8 +1,8 @@
 {
-  "name": "koala-cli",
+  "name": "usekoala",
   "version": "0.1.0",
   "description": "Create shortcuts for commands with ease.",
-  "main": "index.js",
+  "main": "src/index.js",
   "bin": {
     "koala": "bin/koala-cli.js",
     "k": "bin/koala.js"
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mazecodes/koala-cli.git"
+    "url": "git+https://github.com/mazecodes/koala.git"
   },
   "keywords": [],
   "author": "Maze Peterson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mazecodes/koala-cli/issues"
+    "url": "https://github.com/mazecodes/koala/issues"
   },
-  "homepage": "https://github.com/mazecodes/koala-cli#readme",
+  "homepage": "https://github.com/mazecodes/koala#readme",
   "devDependencies": {
     "eslint": "^7.19.0",
     "eslint-config-airbnb-base": "^14.2.1",

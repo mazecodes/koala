@@ -17,19 +17,19 @@
 npm:
 
 ```bash
-npm install -g koala-cli
+npm install -g usekoala
 ```
 
 Yarn:
 
 ```bash
-yarn global add koala-cli
+yarn global add usekoala
 ```
 
 GitHub:
 
 ```bash
-git clone https://github.com/mazecodes/koala-cli.git
+git clone https://github.com/mazecodes/koala.git
 ```
 
 ## Usage
@@ -73,7 +73,7 @@ koala list
 ## Contributing
 
 All contributions, issues and feature requests are welcome!<br>
-Please feel free to check [issues page](https://github.com/mazecodes/koala-cli/issues).
+Please feel free to check [issues page](https://github.com/mazecodes/koala/issues).
 
 1. Fork the project
 1. Create your feature branch (`git checkout -b feature/AwesomeFeature`)
@@ -95,4 +95,4 @@ Give a ⭐ if you liked this project!
 
 ## License
 
-[MIT](https://github.com/mazecodes/koala-cli/blob/master/LICENSE) © Maze Peterson
+[MIT](https://github.com/mazecodes/koala/blob/master/LICENSE) © Maze Peterson
