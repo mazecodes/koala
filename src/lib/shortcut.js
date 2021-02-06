@@ -75,9 +75,20 @@ const clearShortcuts = () => {
   config.clear();
 };
 
+/**
+ * Get all shortcuts
+ *
+ * @returns {Object} - All shortcuts
+ *
+ * @example
+ *   getShortcuts()
+ */
+const getShortcuts = () => config.all;
+
 module.exports = {
   setShortcut,
   getCommand,
   deleteShortcut,
   clearShortcuts,
+  getShortcuts,
 };
