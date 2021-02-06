@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Create shortcuts for your commands with ease.",
   "main": "index.js",
+  "bin": {
+    "koala": "bin/koala-cli.js"
+  },
   "scripts": {
     "lint": "eslint \"./**/*.js\"",
     "lint:fix": "npm run lint -- --fix",
@@ -30,5 +33,8 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "commander": "^7.0.0"
   }
 }
