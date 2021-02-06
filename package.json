@@ -35,6 +35,7 @@
     "prettier": "^2.2.1"
   },
   "dependencies": {
-    "commander": "^7.0.0"
+    "commander": "^7.0.0",
+    "configstore": "^5.0.1"
   }
 }
