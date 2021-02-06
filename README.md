@@ -31,3 +31,41 @@ GitHub:
 ```bash
 git clone https://github.com/mazecodes/koala-cli.git
 ```
+
+## Usage
+
+Set a new shortcut:
+
+```bash
+koala set push 'git push origin master'
+```
+
+Execute a shortcut:
+
+```bash
+k push
+```
+
+Get the command of a shortcut:
+
+```bash
+koala get push
+```
+
+Delete a shortcut:
+
+```bash
+koala delete push
+```
+
+Clear all shortcuts:
+
+```bash
+koala clear
+```
+
+List all shortcuts:
+
+```bash
+koala list
+```
