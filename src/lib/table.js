@@ -27,13 +27,15 @@ const fromShortcuts = shortcuts => {
     ],
   ];
 
-  Object.keys(shortcuts).forEach(alias => {
-    const shortcutObject = shortcuts[alias];
-    const date = moment(shortcutObject.date).fromNow();
-    const { uses, command } = shortcutObject;
+  Object.keys(shortcuts)
+    .reverse()
+    .forEach(alias => {
+      const shortcutObject = shortcuts[alias];
+      const date = moment(shortcutObject.date).fromNow();
+      const { uses, command } = shortcutObject;
 
-    data.push([alias, command, date, uses]);
-  });
+      data.push([alias, command, date, uses]);
+    });
 
   return table.table(data, {
     border: table.getBorderCharacters('norc'),
