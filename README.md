@@ -11,3 +11,23 @@
 - [Author](#author)
 - [Support](#show-your-support)
 - [License](#license)
+
+## Install
+
+npm:
+
+```bash
+npm install -g koala-cli
+```
+
+Yarn:
+
+```bash
+yarn global add koala-cli
+```
+
+GitHub:
+
+```bash
+git clone https://github.com/mazecodes/koala-cli.git
+```
