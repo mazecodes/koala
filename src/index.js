@@ -20,6 +20,8 @@ module.exports = _args => {
   try {
     const command = bindToCommand(shortcut.getCommand(alias), args);
 
+    shortcut.useShortcut(alias);
+
     logger.koala(`Running: ${chalk.bold(command)}`);
     executeCommand(command);
   } catch (error) {

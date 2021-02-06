@@ -101,6 +101,20 @@ const getShortcuts = () => config.all;
  */
 const getSize = () => config.size;
 
+const useShortcut = alias => {
+  if (!config.has(alias)) {
+    throw new Error(`Shortcut ${chalk.bold(alias)} doesn't exist.`);
+  }
+
+  const shortcutObject = config.get(alias);
+  const newShortcutObject = {
+    ...shortcutObject,
+    uses: shortcutObject.uses + 1,
+  };
+
+  config.set(alias, newShortcutObject);
+};
+
 module.exports = {
   setShortcut,
   getCommand,
@@ -108,4 +122,5 @@ module.exports = {
   clearShortcuts,
   getShortcuts,
   getSize,
+  useShortcut,
 };

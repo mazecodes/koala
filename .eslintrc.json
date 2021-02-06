@@ -6,6 +6,7 @@
     "prettier/prettier": "error",
     "no-console": "off",
     "node/shebang": "off",
-    "no-underscore-dangle": "off"
+    "no-underscore-dangle": "off",
+    "node/no-unsupported-features/es-syntax": "off"
   }
 }
