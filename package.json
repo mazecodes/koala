@@ -1,6 +1,6 @@
 {
   "name": "usekoala",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Create shortcuts for commands with ease.",
   "main": "src/index.js",
   "bin": {
