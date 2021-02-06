@@ -88,3 +88,11 @@ Maze Peterson:
 - Twitter: [mazecodes](https://twitter.com/mazecodes)
 - GitHub: [mazecodes](https://github.com/mazecodes)
 - npm: [mazecodes](https://npmjs.com/~mazecodes)
+
+## Show your support
+
+Give a ⭐ if you liked this project!
+
+## License
+
+[MIT](https://github.com/mazecodes/koala-cli/blob/master/LICENSE) © Maze Peterson
