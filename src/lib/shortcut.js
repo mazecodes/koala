@@ -22,7 +22,13 @@ const setShortcut = (alias, command, force = false) => {
     throw new Error('Shortcut already exists.');
   }
 
-  config.set(alias, command);
+  const shortcutObject = {
+    command,
+    date: Date.now(),
+    uses: 0,
+  };
+
+  config.set(alias, shortcutObject);
 };
 
 /**
@@ -39,7 +45,7 @@ const getCommand = alias => {
     throw new Error(`Shortcut ${chalk.bold(alias)} doesn't exist.`);
   }
 
-  return config.get(alias);
+  return config.get(alias).command;
 };
 
 /**
