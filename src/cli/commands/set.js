@@ -10,7 +10,13 @@ const logger = require('../../lib/logger');
  * @param {String} command - The command to create a shortcut for
  * @returns {void}
  */
-module.exports = async (alias, command) => {
+module.exports = async (alias, _command) => {
+  const remainingCommands = process.argv.slice(5);
+  const command =
+    remainingCommands.length !== 0
+      ? `${_command} && ${remainingCommands.join(' && ')}`
+      : _command;
+
   try {
     shortcut.setShortcut(alias, command);
 
