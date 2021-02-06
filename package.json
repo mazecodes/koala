@@ -1,7 +1,7 @@
 {
   "name": "koala-cli",
   "version": "0.1.0",
-  "description": "Create shortcuts for your commands with ease.",
+  "description": "Create shortcuts for commands with ease.",
   "main": "index.js",
   "bin": {
     "koala": "bin/koala-cli.js",
