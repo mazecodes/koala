@@ -1,4 +1,5 @@
 const ConfigStore = require('configstore');
+const chalk = require('chalk');
 
 const package = require('../../package.json');
 
@@ -24,6 +25,24 @@ const setShortcut = (alias, command, force = false) => {
   config.set(alias, command);
 };
 
+/**
+ * Get the command of the given shortcut
+ *
+ * @param {String} alias - The shortcut alias
+ * @returns {String} - The command
+ *
+ * @example
+ *   getCommand('push') // git push origin master
+ */
+const getCommand = alias => {
+  if (!config.has(alias)) {
+    throw new Error(`Shortcut ${chalk.bold(alias)} doesn't exist.`);
+  }
+
+  return config.get(alias);
+};
+
 module.exports = {
   setShortcut,
+  getCommand,
 };
