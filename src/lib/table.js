@@ -18,18 +18,39 @@ const moment = require('moment');
  *   })
  */
 const fromShortcuts = shortcuts => {
-  const data = [[chalk.bold('Alias'), chalk.bold('Date'), chalk.bold('Uses')]];
+  const data = [
+    [
+      chalk.bold('Alias'),
+      chalk.bold('Command'),
+      chalk.bold('Date'),
+      chalk.bold('Uses'),
+    ],
+  ];
 
   Object.keys(shortcuts).forEach(alias => {
     const shortcutObject = shortcuts[alias];
     const date = moment(shortcutObject.date).fromNow();
-    const { uses } = shortcutObject;
+    const { uses, command } = shortcutObject;
 
-    data.push([alias, date, uses]);
+    data.push([alias, command, date, uses]);
   });
 
   return table.table(data, {
     border: table.getBorderCharacters('norc'),
+    columns: {
+      0: {
+        width: 10,
+      },
+      1: {
+        width: 25,
+      },
+      2: {
+        width: 15,
+      },
+      3: {
+        width: 6,
+      },
+    },
   });
 };
 
