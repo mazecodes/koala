@@ -42,7 +42,25 @@ const getCommand = alias => {
   return config.get(alias);
 };
 
+/**
+ * Delete the given shortcut
+ *
+ * @param {String} alias - The shortcut alias
+ * @returns {void}
+ *
+ * @example
+ *   deleteShortcut('push')
+ */
+const deleteShortcut = alias => {
+  if (!config.has(alias)) {
+    throw new Error(`Shortcut ${chalk.bold(alias)} doesn't exist.`);
+  }
+
+  config.delete(alias);
+};
+
 module.exports = {
   setShortcut,
   getCommand,
+  deleteShortcut,
 };
